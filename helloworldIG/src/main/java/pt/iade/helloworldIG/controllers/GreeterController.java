@@ -17,10 +17,10 @@ public class GreeterController {
         logger.info("Saying Hello to the world");
         return "Hello World";
     }
-    @GetMapping(path="{name}",
+    @GetMapping(path = "{name}",
     produces= MediaType.APPLICATION_JSON_VALUE)
-    public String getGreeting(@PathVariable("name")String name) {
-        logger.info("Saying Hello to" + name);
+    public String getGreeting(@PathVariable("name") String name) {
+        logger.info("Saying Hello to" +name);
         return "Hello" + name;
     }
 
