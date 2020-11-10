@@ -64,7 +64,7 @@ public class JavaTesterController {
     private double grades[] = { 10.5, 12, 14.5 };
     @GetMapping(path = "/average", produces= MediaType.APPLICATION_JSON_VALUE)
     public double average() {
-        double total = 0; //talvez float
+        double total = 0; 
         for (int x = 0;  x < grades.length;x= x+x){
             total = total + grades[x];
         }           
